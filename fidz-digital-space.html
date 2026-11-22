@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fidz Web Development – Solusi Digital untuk Bisnis Anda</title>
+<meta name="description" content="Fidz Web Development membantu bisnis membangun website, katalog online, aplikasi web, dan sistem manajemen.">
+<meta name="theme-color" content="#030713">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600&display=swap">
+<script>document.documentElement.className='js'</script>
+<style>
+:root{--cy:#3de2ff;--bl:#3b7bff;--vi:#9a6bff;--tx:#e9efff;--mu:#93a3cc;--ln:rgba(110,150,255,.28)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#030713;scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--tx);line-height:1.6;overflow-x:hidden;padding-bottom:104px;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(55% 40% at 85% 0,rgba(90,70,255,.3),transparent),radial-gradient(45% 35% at 0 45%,rgba(20,120,255,.18),transparent),radial-gradient(50% 40% at 100% 90%,rgba(150,90,255,.18),transparent)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 16px;margin-top:16px}
+.g{background:linear-gradient(145deg,rgba(45,65,140,.3),rgba(8,14,36,.62));border:1px solid var(--ln);border-radius:22px;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 26px rgba(60,110,255,.14);transition:border-color .25s,box-shadow .25s}
+.g:hover{border-color:rgba(61,226,255,.55);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 0 34px rgba(61,226,255,.22)}
+.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.mu{color:var(--mu);font-size:.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:99px;font-weight:700;font-size:.95rem;border:1px solid var(--ln);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.p{background:linear-gradient(90deg,var(--bl),var(--vi));border-color:rgba(255,255,255,.3);box-shadow:0 0 26px rgba(80,110,255,.55)}
+.p:hover{box-shadow:0 0 38px rgba(61,226,255,.65)}
+.gh{background:rgba(255,255,255,.04)}
+.gh:hover{border-color:var(--cy);box-shadow:0 0 22px rgba(61,226,255,.3)}
+.ic{width:46px;height:46px;flex:none;border-radius:50%;display:grid;place-items:center;color:var(--cy);border:1px solid rgba(61,226,255,.45);background:rgba(61,226,255,.08);box-shadow:0 0 18px rgba(61,226,255,.3)}
+.ic.s{width:36px;height:36px}.ic.s .i{width:18px;height:18px}
+.ic.v,.sc:nth-child(even) .ic{color:var(--vi);border-color:rgba(154,107,255,.5);background:rgba(154,107,255,.1);box-shadow:0 0 18px rgba(154,107,255,.35)}
+/* header */
+header{position:sticky;top:8px;z-index:30}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:9px 12px 9px 18px;border-radius:99px}
+.lg{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.16em}
+.lg i{width:20px;height:20px;border-radius:6px;background:linear-gradient(135deg,var(--cy),var(--vi));box-shadow:0 0 16px var(--cy);transform:rotate(45deg)}
+.mn{display:none;gap:22px;font-size:.88rem;color:var(--mu)}
+.mn a:hover,.on{color:#fff}
+.nav .btn{padding:9px 18px;font-size:.85rem}
+/* hero */
+.hero{position:relative;padding-top:12px}
+.orbbox{position:absolute;right:-8%;top:-6px;width:82%;aspect-ratio:1;animation:fl 8s ease-in-out infinite}
+.orbbox::before{content:"";position:absolute;inset:16%;border-radius:50%;background:radial-gradient(circle,rgba(60,120,255,.5),rgba(130,80,255,.22) 55%,transparent 72%);filter:blur(10px)}
+.orbbox::after{content:"";position:absolute;left:20%;right:20%;bottom:7%;height:8%;border-radius:50%;border:2px solid rgba(61,226,255,.6);box-shadow:0 0 24px rgba(61,226,255,.6),inset 0 0 18px rgba(154,107,255,.5)}
+#orb{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.rg{position:absolute;inset:32% -6% 28%;border-radius:50%;border:2px solid transparent;border-top-color:rgba(154,107,255,.85);border-bottom-color:rgba(61,226,255,.75);transform:rotate(-16deg);box-shadow:0 0 16px rgba(80,120,255,.3);z-index:2}
+.rg.b{inset:38% -14% 34%;transform:rotate(13deg);opacity:.55}
+.bb{position:absolute;z-index:2;width:var(--s);height:var(--s);left:var(--x);top:var(--y);border-radius:50%;background:radial-gradient(circle at 30% 30%,#cfeaff,#3b7bff 55%,#1b2a86);box-shadow:0 0 16px var(--cy);animation:fl 6s ease-in-out infinite}
+.gr,.ds,.ct,.fc{position:relative;z-index:3}
+.gr{min-height:262px;max-width:62%;padding-top:14px}
+.hi{color:var(--mu)}
+h1{font:600 clamp(2.3rem,9vw,4.2rem)/1.05 "Playfair Display",Georgia,serif;margin:2px 0 14px}
+h1 i{font-style:normal;color:var(--cy);text-shadow:0 0 18px var(--cy)}
+.hc{font-weight:800;font-size:clamp(1.1rem,4vw,1.65rem);line-height:1.3;background:linear-gradient(90deg,#fff,var(--cy) 60%,var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ds{color:var(--mu);max-width:52ch;margin:4px 0 20px}
+.ct{display:flex;flex-wrap:wrap;gap:12px}
+.fc{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;align-items:center;padding:16px 18px;margin-top:20px;max-width:440px}
+.fc .ic{grid-row:span 2}
+.fc b{font-size:.95rem}
+.bar{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:8px}
+.bar s{height:6px;border-radius:9px;background:rgba(255,255,255,.12)}
+.bar s.f{background:linear-gradient(90deg,var(--cy),var(--vi));box-shadow:0 0 10px var(--cy)}
+.pill{position:absolute;right:0;top:20px;z-index:4;display:flex;flex-direction:column;gap:2px;padding:8px 6px;border-radius:26px}
+.pill a{display:grid;justify-items:center;gap:2px;padding:8px;border-radius:16px;font-size:.55rem;font-weight:700;letter-spacing:.08em;color:var(--mu);text-transform:uppercase}
+.pill a:hover{color:#fff;background:rgba(61,226,255,.12)}
+/* kartu layanan */
+.ph{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+.ph h2{display:flex;align-items:center;gap:10px;font-size:1.02rem}
+.cd{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.sc{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:16px;text-align:left}
+.sc b{font-size:.98rem;line-height:1.3;margin-top:4px}
+.sc small{color:var(--mu);font-size:.8rem;line-height:1.45}
+.sc em{font-style:normal;font-size:.78rem;color:var(--cy);margin-top:auto;padding-top:4px}
+.sp{width:80px;height:24px}
+.sc:hover{transform:translateY(-3px)}
+/* panel */
+.two{display:grid;gap:16px}
+.pn{padding:20px}
+.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.tabs button{padding:6px 16px;border-radius:99px;font-size:.82rem;color:var(--mu);border:1px solid var(--ln);background:rgba(255,255,255,.03)}
+.tabs [aria-pressed=true]{color:#fff;background:linear-gradient(90deg,var(--bl),var(--vi));border-color:transparent;box-shadow:0 0 16px rgba(100,100,255,.5)}
+.it{display:flex;align-items:center;gap:12px;width:100%;padding:9px 12px 9px 9px;margin-bottom:8px;border-radius:16px;text-align:left;background:rgba(255,255,255,.035);border:1px solid transparent;transition:border-color .2s,background .2s}
+.it:hover{border-color:rgba(61,226,255,.5);background:rgba(61,226,255,.06)}
+.it[hidden]{display:none}
+.it span{flex:1;min-width:0}
+.it b{display:block;font-size:.9rem;line-height:1.3}
+.it small{color:var(--mu);font-size:.74rem}
+.th{width:64px;height:48px;flex:none;border-radius:10px;box-shadow:0 0 14px rgba(61,226,255,.25)}
+.bd{font-style:normal;font-size:.6rem;font-weight:800;letter-spacing:.08em;padding:3px 8px;border-radius:99px;border:1px solid rgba(154,107,255,.7);color:#cdb8ff}
+.rn{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.rn svg{width:92px;height:92px;flex:none;filter:drop-shadow(0 0 10px rgba(61,226,255,.45))}
+.lgd{display:flex;gap:14px;margin-top:4px;font-size:.76rem;color:var(--mu)}
+.lgd i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--vi)}
+.lgd i+i,.lgd span+span i{background:var(--cy)}
+.sl{list-style:none;display:grid;gap:9px}
+.sl li{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;font-size:.8rem;line-height:1.35}
+.sl span,.sl b{padding:9px 11px;border-radius:12px;font-weight:500;transition:box-shadow .25s}
+.sl span{border:1px solid rgba(154,107,255,.4);background:rgba(154,107,255,.08);color:#d8c9ff}
+.sl b{border:1px solid rgba(61,226,255,.45);background:rgba(61,226,255,.08);color:#c9f6ff}
+.sl .i{width:18px;height:18px;color:var(--cy)}
+.sl li:hover b{box-shadow:0 0 16px rgba(61,226,255,.5)}
+/* konsultasi */
+.ai{display:grid;grid-template-columns:auto 1fr;gap:14px 16px;align-items:center;padding:20px;background:linear-gradient(135deg,rgba(60,50,170,.4),rgba(8,14,36,.65))}
+.rb{width:92px;height:92px;filter:drop-shadow(0 0 12px rgba(61,226,255,.55));animation:fl 5s ease-in-out infinite}
+.ai h2{font-size:1.1rem;line-height:1.3;margin-bottom:4px}
+.ai .btn{margin-top:12px;padding:10px 18px;font-size:.85rem}
+.bub{grid-column:1/-1;display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 14px 14px 18px;border-radius:20px;background:rgba(255,255,255,.05);border:1px solid var(--ln);font-size:.88rem;color:#cfd9f5}
+.go{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--bl),var(--vi));box-shadow:0 0 20px rgba(100,100,255,.6)}
+/* about, proses */
+.ab h2{font:600 clamp(1.4rem,4vw,1.9rem)/1.2 "Playfair Display",Georgia,serif;margin:6px 0 12px}
+.ab p{color:var(--mu);font-size:.9rem;margin-bottom:10px}
+.wv{width:100%;height:56px;margin-top:6px}
+.pr{list-style:none;position:relative;display:grid;gap:16px;padding-left:34px}
+.pr::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--cy),var(--vi));box-shadow:0 0 10px var(--cy);transform:scaleY(0);transform-origin:top;transition:transform 1.4s .2s}
+.pr.in::before{transform:none}
+.pr li{position:relative}
+.pr li::before{content:"";position:absolute;left:-34px;top:4px;width:18px;height:18px;border-radius:50%;background:#071026;border:2px solid var(--cy);box-shadow:0 0 12px var(--cy)}
+.pr b{display:block;font-size:.98rem}
+.pr small{color:var(--mu);font-size:.84rem}
+.js .pr li{opacity:0;transition:opacity .6s calc(var(--d)*.35s)}
+.js .pr.in li{opacity:1}
+/* faq */
+details{padding:0 18px;margin-bottom:10px;border-radius:18px}
+summary{list-style:none;cursor:pointer;padding:15px 0;font-weight:700;font-size:.94rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--cy);font-size:1.5rem;line-height:1;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mu);padding-bottom:16px;font-size:.9rem;animation:dn .3s}
+/* kontak */
+.fin{text-align:center;padding:38px 20px}
+.fin h2{font:600 clamp(1.6rem,5vw,2.6rem)/1.15 "Playfair Display",Georgia,serif;margin-bottom:8px}
+.big{padding:16px 30px;font-size:1.05rem;margin:20px 0 22px;animation:pu 2.6s ease-in-out infinite}
+.so{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.so a{display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:99px;font-size:.88rem}
+footer{text-align:center;color:var(--mu);font-size:.8rem;padding:28px 16px 8px}
+footer b{display:block;color:var(--tx);letter-spacing:.18em;margin-bottom:2px}
+/* dialog */
+dialog{margin:auto;width:min(440px,calc(100% - 32px));padding:0;color:var(--tx);background:linear-gradient(145deg,#14204a,#070d24)}
+dialog::backdrop{background:rgba(2,5,16,.74);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px)}
+dialog[open]{animation:dn .25s}
+.dc{position:relative;padding:24px}
+.x{position:absolute;right:14px;top:8px;font-size:1.7rem;color:var(--mu)}
+.pv{display:block;width:100%;max-height:200px;border-radius:14px;margin-bottom:14px;border:1px solid var(--ln)}
+dialog h3{font-size:1.2rem;padding-right:24px}
+dialog p{color:var(--mu);margin:6px 0 18px;font-size:.92rem}
+/* nav bawah */
+.bn{position:fixed;left:50%;bottom:calc(10px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:40;width:min(520px,calc(100% - 24px));display:flex;justify-content:space-around;padding:8px 6px;border-radius:40px}
+.bn a{display:grid;justify-items:center;gap:2px;font-size:.64rem;font-weight:500;color:var(--mu);padding:2px 8px}
+.bn a.on svg{color:#fff;background:radial-gradient(circle,#5aa0ff,#4a3fe0);border-radius:50%;box-sizing:content-box;padding:9px;margin:-12px 0 -2px;box-shadow:0 0 22px var(--bl)}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@keyframes fl{50%{transform:translateY(-10px)}}
+@keyframes dn{from{opacity:0;transform:translateY(-6px)}}
+@keyframes pu{50%{box-shadow:0 0 44px rgba(61,226,255,.75)}}
+@media(min-width:900px){
+.mn{display:flex}.bn{display:none}body{padding-bottom:30px}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:20px;padding-top:30px}
+.orbbox{position:relative;right:auto;top:auto;width:100%;max-width:560px;justify-self:center}
+.gr{min-height:0;max-width:none}
+.pill{top:40px}.pill a{font-size:.6rem}
+.cd{grid-template-columns:repeat(4,1fr)}
+.two{grid-template-columns:1.05fr 1fr}
+.ai{grid-template-columns:auto 1fr 1.1fr;padding:24px}
+.bub{grid-column:auto}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv,.js .pr li{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gg"><stop offset="0" stop-color="#3de2ff"/><stop offset="1" stop-color="#9a6bff"/></linearGradient>
+<g id="i-home"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></g>
+<g id="i-grid"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></g>
+<g id="i-chart"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g>
+<g id="i-win"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></g>
+<g id="i-chat"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></g>
+<g id="i-tar"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></g>
+<g id="i-globe"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g>
+<g id="i-box"><path d="M3 7l9-4 9 4-9 4zM3 7v10l9 4 9-4V7M12 11v10"/></g>
+<g id="i-code"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></g>
+<g id="i-lay"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></g>
+<g id="i-ar"><path d="M5 12h14M13 6l6 6-6 6"/></g>
+<g id="i-yt"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></g>
+<g id="i-tt"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.4 2.6 2 4.2 5 4.5"/></g>
+<g id="i-lk"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.700-5.700l-1 1M14 10a4 4 0 0 0-5.700 0l-3 3a4 4 0 0 0 5.700 5.700l1-1"/></g>
+<g id="sp"><path d="M0 18C14 4 22 22 40 12S66 8 80 2" fill="none" stroke="url(#gg)" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/></g>
+<g id="m1"><rect width="64" height="48" rx="6" fill="#0b1536"/><rect width="64" height="7" fill="#16275a"/><rect x="6" y="14" width="30" height="5" rx="2" fill="#3de2ff"/><rect x="6" y="23" width="24" height="3" rx="1.5" fill="#4a5f9a"/><rect x="6" y="29" width="18" height="3" rx="1.5" fill="#4a5f9a"/><rect x="6" y="37" width="14" height="5" rx="2.5" fill="#7a5cff"/><circle cx="48" cy="29" r="11" fill="#2a49b8"/></g>
+<g id="m2"><rect width="64" height="48" rx="6" fill="#0b1536"/><rect width="64" height="7" fill="#16275a"/><g fill="#1c2f6e"><rect x="5" y="12" width="16" height="30" rx="3"/><rect x="24" y="12" width="16" height="30" rx="3"/><rect x="43" y="12" width="16" height="30" rx="3"/></g><rect x="7" y="14" width="12" height="13" rx="2" fill="#3b7bff"/><rect x="26" y="14" width="12" height="13" rx="2" fill="#9a6bff"/><rect x="45" y="14" width="12" height="13" rx="2" fill="#3de2ff"/><g fill="#4a5f9a"><rect x="7" y="31" width="10" height="2"/><rect x="26" y="31" width="10" height="2"/><rect x="45" y="31" width="10" height="2"/></g></g>
+<g id="m3"><rect width="64" height="48" rx="6" fill="#0b1536"/><rect width="64" height="7" fill="#16275a"/><circle cx="19" cy="28" r="10" fill="none" stroke="#1c2f6e" stroke-width="5"/><circle cx="19" cy="28" r="10" fill="none" stroke="#3de2ff" stroke-width="5" stroke-dasharray="38 63" transform="rotate(-90 19 28)"/><rect x="36" y="30" width="5" height="12" fill="#3b7bff"/><rect x="43" y="22" width="5" height="20" fill="#3de2ff"/><rect x="50" y="26" width="5" height="16" fill="#9a6bff"/></g>
+<g id="m4"><rect width="64" height="48" rx="6" fill="#0b1536"/><rect width="64" height="7" fill="#16275a"/><g fill="#1c2f6e"><rect x="5" y="12" width="54" height="6" rx="2"/><rect x="5" y="21" width="54" height="6" rx="2"/><rect x="5" y="30" width="54" height="6" rx="2"/></g><g fill="#3de2ff"><rect x="8" y="14" width="14" height="2"/><rect x="8" y="23" width="18" height="2"/><rect x="8" y="32" width="10" height="2"/></g><g fill="#9a6bff"><rect x="44" y="14" width="12" height="2"/><rect x="44" y="23" width="12" height="2"/><rect x="44" y="32" width="12" height="2"/></g><rect x="5" y="40" width="30" height="4" rx="2" fill="#3b7bff"/></g>
+</defs></svg>
+
+<header class="w"><div class="g nav">
+<a class="lg" href="#home"><i></i>FIDZ</a>
+<nav class="mn" aria-label="Menu utama"><a href="#home" data-n="home">Beranda</a><a href="#layanan" data-n="layanan">Layanan</a><a href="#solusi" data-n="solusi">Solusi</a><a href="#demo" data-n="demo">Demo</a><a href="#tentang" data-n="tentang">Tentang</a><a href="#kontak" data-n="kontak">Kontak</a></nav>
+<a class="btn p" data-wa href="https://wa.me/628815225232" target="_blank" rel="noopener">Konsultasi</a>
+</div></header>
+
+<main>
+<section class="w hero" id="home">
+<div>
+<div class="gr"><p class="hi">Welcome to</p><h1>Fidz Digital Space <i>✦</i></h1><p class="hc">Solusi Digital untuk Bisnis Anda.</p></div>
+<p class="ds">Membantu bisnis membangun kehadiran digital dan mengembangkan solusi teknologi yang relevan dengan kebutuhan usaha.</p>
+<div class="ct"><a class="btn p" data-wa href="https://wa.me/628815225232" target="_blank" rel="noopener">Diskusikan Kebutuhan Anda</a><a class="btn gh" href="#layanan">Jelajahi Layanan</a></div>
+<div class="g fc"><span class="ic s"><svg class="i" viewBox="0 0 24 24"><use href="#i-tar"/></svg></span><b>Fokus Fidz</b><small class="mu">Kenali kebutuhan, lalu bangun solusinya</small><div class="bar"><s class="f"></s><s></s><s></s><s></s></div></div>
+</div>
+<div class="orbbox" aria-hidden="true"><canvas id="orb"></canvas><i class="rg"></i><i class="rg b"></i><i class="bb" style="--s:22px;--x:10%;--y:14%"></i><i class="bb" style="--s:14px;--x:86%;--y:30%;animation-delay:-2s"></i><i class="bb" style="--s:18px;--x:78%;--y:74%;animation-delay:-4s"></i></div>
+<nav class="g pill" aria-label="Navigasi cepat"><a href="#layanan"><svg class="i" viewBox="0 0 24 24"><use href="#i-grid"/></svg>Layanan</a><a href="#solusi"><svg class="i" viewBox="0 0 24 24"><use href="#i-chart"/></svg>Solusi</a><a href="#demo"><svg class="i" viewBox="0 0 24 24"><use href="#i-win"/></svg>Demo</a><a href="#kontak"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg>Kontak</a></nav>
+</section>
+
+<section class="w" id="layanan">
+<div class="ph"><h2>Layanan Digital</h2><span class="mu">Ketuk kartu untuk detail</span></div>
+<div class="cd">
+<button class="g sc rv" data-t="Website Profesional" data-d="Profil usaha, layanan, galeri, lokasi, dan kontak dalam satu website yang rapi dan mudah ditemukan pelanggan." data-q="Halo Fidz, saya tertarik dengan layanan Website Profesional dan ingin berkonsultasi."><span class="ic"><svg class="i" viewBox="0 0 24 24"><use href="#i-globe"/></svg></span><b>Website Profesional</b><small>Profil bisnis yang rapi, cepat, dan nyaman dibuka di HP.</small><svg class="sp" viewBox="0 0 80 24" preserveAspectRatio="none"><use href="#sp"/></svg><em>Lihat detail ›</em></button>
+<button class="g sc rv" data-t="Katalog Online" data-d="Katalog produk dengan foto, harga, dan kategori. Pelanggan bisa langsung memesan lewat WhatsApp." data-q="Halo Fidz, saya tertarik dengan layanan Katalog Online dan ingin berkonsultasi."><span class="ic"><svg class="i" viewBox="0 0 24 24"><use href="#i-box"/></svg></span><b>Katalog Online</b><small>Tampilkan produk lengkap dengan harga dan tombol pesan.</small><svg class="sp" viewBox="0 0 80 24" preserveAspectRatio="none"><use href="#sp"/></svg><em>Lihat detail ›</em></button>
+<button class="g sc rv" data-t="Web Application" data-d="Aplikasi berbasis web yang dirancang dari alur kerja usaha Anda, misalnya pemesanan, formulir, atau dashboard." data-q="Halo Fidz, saya tertarik dengan layanan Web Application dan ingin berkonsultasi."><span class="ic"><svg class="i" viewBox="0 0 24 24"><use href="#i-code"/></svg></span><b>Web Application</b><small>Aplikasi web sesuai alur kerja bisnis Anda.</small><svg class="sp" viewBox="0 0 80 24" preserveAspectRatio="none"><use href="#sp"/></svg><em>Lihat detail ›</em></button>
+<button class="g sc rv" data-t="Sistem Manajemen UMKM" data-d="Pencatatan stok, transaksi, dan laporan sederhana agar pekerjaan usaha lebih praktis, terorganisir, dan efisien." data-q="Halo Fidz, saya tertarik dengan Sistem Manajemen UMKM dan ingin berkonsultasi."><span class="ic"><svg class="i" viewBox="0 0 24 24"><use href="#i-lay"/></svg></span><b>Sistem Manajemen UMKM</b><small>Stok, transaksi, dan laporan dalam satu sistem.</small><svg class="sp" viewBox="0 0 80 24" preserveAspectRatio="none"><use href="#sp"/></svg><em>Lihat detail ›</em></button>
+</div>
+</section>
+
+<div class="w two">
+<section class="g pn rv" id="demo">
+<div class="ph"><h2><span class="ic s"><svg class="i" viewBox="0 0 24 24"><use href="#i-win"/></svg></span>Digital Solutions Showcase</h2></div>
+<div class="tabs"><button data-f="" aria-pressed="true">Semua</button><button data-f="w" aria-pressed="false">Website</button><button data-f="s" aria-pressed="false">Sistem</button></div>
+<button class="it" data-g="w" data-m="m1" data-c="Minta demo via WhatsApp" data-t="Website Profil Bisnis" data-d="Konsep halaman profil usaha: pengenalan bisnis, layanan, galeri, dan kontak. Ini contoh konsep tampilan, bukan proyek klien." data-q="Halo Fidz, saya ingin melihat demo Website Profil Bisnis untuk bisnis saya."><svg class="th" viewBox="0 0 64 48"><use href="#m1"/></svg><span><b>Website Profil Bisnis</b><small>Profil usaha, layanan, kontak</small></span><i class="bd">CONCEPT</i></button>
+<button class="it" data-g="w" data-m="m2" data-c="Minta demo via WhatsApp" data-t="Katalog Produk" data-d="Konsep katalog dengan kartu produk, harga, dan tombol pesan. Ini contoh konsep tampilan, bukan proyek klien." data-q="Halo Fidz, saya ingin melihat demo Katalog Produk untuk bisnis saya."><svg class="th" viewBox="0 0 64 48"><use href="#m2"/></svg><span><b>Katalog Produk</b><small>Produk, harga, tombol pesan</small></span><i class="bd">CONCEPT</i></button>
+<button class="it" data-g="s" data-m="m3" data-c="Minta demo via WhatsApp" data-t="Dashboard Manajemen" data-d="Konsep dashboard ringkasan usaha dengan grafik dan angka penting. Ini contoh konsep tampilan, bukan proyek klien." data-q="Halo Fidz, saya ingin melihat demo Dashboard Manajemen untuk bisnis saya."><svg class="th" viewBox="0 0 64 48"><use href="#m3"/></svg><span><b>Dashboard Manajemen</b><small>Ringkasan dan grafik usaha</small></span><i class="bd">CONCEPT</i></button>
+<button class="it" data-g="s" data-m="m4" data-c="Minta demo via WhatsApp" data-t="Sistem Stok & Transaksi" data-d="Konsep pencatatan stok barang dan transaksi dalam tabel yang mudah dibaca. Ini contoh konsep tampilan, bukan proyek klien." data-q="Halo Fidz, saya ingin melihat demo Sistem Stok & Transaksi untuk bisnis saya."><svg class="th" viewBox="0 0 64 48"><use href="#m4"/></svg><span><b>Sistem Stok &amp; Transaksi</b><small>Stok, transaksi, laporan</small></span><i class="bd">CONCEPT</i></button>
+<p class="mu">Belum ada proyek klien yang ditampilkan. Ketuk item untuk melihat konsep dan minta demo.</p>
+</section>
+
+<section class="g pn rv" id="solusi">
+<div class="ph"><h2><span class="ic s v"><svg class="i" viewBox="0 0 24 24"><use href="#i-chart"/></svg></span>Business Problems &amp; Digital Solutions</h2></div>
+<div class="rn"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="9"/><circle cx="50" cy="50" r="40" fill="none" stroke="url(#gg)" stroke-width="9" stroke-linecap="round" stroke-dasharray="210 252" transform="rotate(-90 50 50)"/><text x="50" y="57" text-anchor="middle" fill="#fff" font-size="26" font-weight="800">5</text></svg><div><b>5 masalah, 5 solusi</b><p class="mu">Setiap masalah usaha punya jawaban digital.</p><div class="lgd"><span><i></i>Masalah</span><span><i></i>Solusi</span></div></div></div>
+<ul class="sl">
+<li><span>Informasi bisnis sulit ditemukan</span><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg><b>Website profesional</b></li>
+<li><span>Produk sulit ditampilkan</span><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg><b>Katalog online</b></li>
+<li><span>Stok tidak terkontrol</span><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg><b>Sistem manajemen stok</b></li>
+<li><span>Transaksi tidak terorganisir</span><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg><b>Sistem transaksi</b></li>
+<li><span>Pesanan sulit dikelola</span><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg><b>Sistem pemesanan</b></li>
+</ul>
+</section>
+</div>
+
+<section class="w" id="konsultasi"><div class="g ai rv">
+<svg class="rb" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="10" r="4" fill="#3de2ff"/><path d="M48 14v10" stroke="#6b8cff" stroke-width="3"/><rect x="18" y="24" width="60" height="48" rx="22" fill="#0c1740" stroke="#5a86ff" stroke-width="2.5"/><rect x="28" y="36" width="40" height="22" rx="11" fill="#050b22"/><ellipse cx="39" cy="47" rx="5" ry="6" fill="#3de2ff"/><ellipse cx="57" cy="47" rx="5" ry="6" fill="#3de2ff"/><rect x="10" y="38" width="8" height="18" rx="4" fill="#3b7bff"/><rect x="78" y="38" width="8" height="18" rx="4" fill="#3b7bff"/><path d="M30 84c4-8 32-8 36 0v6H30z" fill="#0c1740" stroke="#5a86ff" stroke-width="2"/></svg>
+<div><h2>Punya ide, kebutuhan, atau masalah dalam bisnis?</h2><p class="mu">Teman diskusi solusi digital Anda.</p><a class="btn p" data-wa href="https://wa.me/628815225232" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg>Konsultasi via WhatsApp</a></div>
+<a class="bub" data-wa href="https://wa.me/628815225232" target="_blank" rel="noopener" aria-label="Kirim pesan WhatsApp"><span>Ceritakan kebutuhan Anda. Mari diskusikan solusi digital yang paling sesuai.</span><b class="go"><svg class="i" viewBox="0 0 24 24"><use href="#i-ar"/></svg></b></a>
+</div></section>
+
+<div class="w two">
+<section class="g pn ab rv" id="tentang">
+<span class="mu">Tentang Fidz</span><h2>Connecting Business Needs with Technology.</h2>
+<p>Fidz Web Development adalah layanan pengembangan website dan solusi digital yang berfokus pada kebutuhan bisnis.</p>
+<p>Teknologi bukan hanya soal tampilan, tetapi bagaimana solusi dapat membantu pekerjaan menjadi lebih praktis, terorganisir, dan efisien.</p>
+<svg class="wv" viewBox="0 0 80 24" preserveAspectRatio="none" aria-hidden="true"><use href="#sp"/></svg>
+</section>
+<section class="g pn rv" id="proses">
+<div class="ph"><h2><span class="ic s"><svg class="i" viewBox="0 0 24 24"><use href="#i-lay"/></svg></span>Proses Pengerjaan</h2></div>
+<ol class="pr rv">
+<li style="--d:1"><b>Konsultasi</b><small>Ceritakan kebutuhan dan masalah usaha Anda.</small></li>
+<li style="--d:2"><b>Analisis &amp; Perencanaan</b><small>Fitur dan alur disusun dari kebutuhan tersebut.</small></li>
+<li style="--d:3"><b>Pengembangan</b><small>Website atau sistem dibangun dan diuji.</small></li>
+<li style="--d:4"><b>Serah Terima</b><small>Hasil diserahkan beserta penjelasan cara memakainya.</small></li>
+</ol>
+</section>
+</div>
+
+<section class="w" id="faq">
+<div class="ph"><h2>Pertanyaan Umum</h2></div>
+<details class="g"><summary>Apakah website bisa disesuaikan dengan bisnis saya?</summary><p>Bisa. Tampilan, isi, dan fitur disesuaikan dengan jenis usaha, produk, dan kebutuhan Anda.</p></details>
+<details class="g"><summary>Apakah bisa membuat sistem khusus?</summary><p>Bisa. Sistem seperti pencatatan stok, transaksi, atau pemesanan dapat dirancang sesuai alur kerja usaha Anda.</p></details>
+<details class="g"><summary>Bagaimana proses pengerjaan?</summary><p>Dimulai dari konsultasi, analisis dan perencanaan, pengembangan, lalu serah terima hasil.</p></details>
+<details class="g"><summary>Berapa biaya pembuatan?</summary><p>Biaya bergantung pada jenis dan tingkat kerumitan kebutuhan. Ceritakan kebutuhan Anda lewat WhatsApp untuk mendapat gambaran biaya.</p></details>
+<details class="g"><summary>Apakah bisa konsultasi dahulu?</summary><p>Bisa. Hubungi Fidz lewat WhatsApp untuk mendiskusikan kebutuhan sebelum memutuskan.</p></details>
+</section>
+
+<section class="w" id="kontak"><div class="g fin rv">
+<h2>Punya Kebutuhan Digital untuk Bisnis Anda?</h2>
+<p class="mu">Ceritakan kebutuhan Anda, kita diskusikan solusinya.</p>
+<a class="btn p big" data-wa href="https://wa.me/628815225232" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg>Chat WhatsApp 08815225232</a>
+<div class="so"><a class="g" href="https://www.tiktok.com/@m.fidz_fahmi" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-tt"/></svg>TikTok</a><a class="g" href="https://www.youtube.com/@m.fidz_fahmi" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-yt"/></svg>YouTube</a><a class="g" href="https://lynk.id/hafidzfahmi7" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-lk"/></svg>Lynk</a></div>
+</div></section>
+</main>
+
+<footer><b>FIDZ WEB DEVELOPMENT</b>Solusi Digital untuk Bisnis Anda.<br>© <span id="yr">2026</span></footer>
+
+<nav class="g bn" aria-label="Navigasi bawah">
+<a href="#home" data-n="home" class="on"><svg class="i" viewBox="0 0 24 24"><use href="#i-home"/></svg>Beranda</a>
+<a href="#layanan" data-n="layanan"><svg class="i" viewBox="0 0 24 24"><use href="#i-grid"/></svg>Layanan</a>
+<a href="#solusi" data-n="solusi"><svg class="i" viewBox="0 0 24 24"><use href="#i-chart"/></svg>Solusi</a>
+<a href="#demo" data-n="demo"><svg class="i" viewBox="0 0 24 24"><use href="#i-win"/></svg>Demo</a>
+<a href="#kontak" data-n="kontak"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg>Kontak</a>
+</nav>
+
+<dialog id="dlg" class="g"><div class="dc"><button class="x" aria-label="Tutup">×</button><svg class="pv" viewBox="0 0 64 48"><use id="dm" href="#m1"/></svg><h3 id="dt"></h3><p id="dd"></p><a id="dw" class="btn p" href="https://wa.me/628815225232" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24"><use href="#i-chat"/></svg><span id="dl">Konsultasi via WhatsApp</span></a></div></dialog>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],N='628815225232',
+wa=m=>'https://wa.me/'+N+'?text='+encodeURIComponent(m),
+M='Halo Fidz, saya ingin berkonsultasi mengenai solusi digital untuk bisnis saya.';
+$$('[data-wa]').forEach(a=>a.href=wa(M));
+$('#yr').textContent=new Date().getFullYear();
+// reveal
+const io=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('in');io.unobserve(i.target)}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+// menu aktif
+const NL=$$('[data-n]'),so=new IntersectionObserver(e=>e.forEach(i=>i.isIntersecting&&NL.forEach(a=>a.classList.toggle('on',a.dataset.n===i.target.id))),{rootMargin:'-40% 0px -55% 0px'});
+['home','layanan','solusi','demo','tentang','kontak'].forEach(i=>so.observe($('#'+i)));
+// tab showcase
+$$('.tabs button').forEach(t=>t.onclick=()=>{$$('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===t));$$('.it').forEach(i=>i.hidden=!!t.dataset.f&&i.dataset.g!==t.dataset.f)});
+// detail
+const D=$('#dlg');
+$$('[data-d]').forEach(b=>b.onclick=()=>{const m=b.dataset.m;$('#dt').textContent=b.dataset.t;$('#dd').textContent=b.dataset.d;$('.pv').style.display=m?'':'none';if(m)$('#dm').setAttribute('href','#'+m);$('#dl').textContent=b.dataset.c||'Konsultasi via WhatsApp';$('#dw').href=wa(b.dataset.q);D.showModal()});
+D.onclick=e=>{if(e.target===D||e.target.closest('.x'))D.close()};
+// orb jaringan
+(()=>{const c=$('#orb'),x=c.getContext('2d'),n=120,P=[],rm=matchMedia('(prefers-reduced-motion:reduce)').matches;let W,H,R,t=.6,on=true,l=0;
+for(let i=0;i<n;i++){const y=1-2*(i+.5)/n,r=Math.sqrt(1-y*y),a=i*2.4;P.push([Math.cos(a)*r,y,Math.sin(a)*r])}
+function draw(){x.clearRect(0,0,W,H);const s=Math.sin(t),k=Math.cos(t),Q=P.map(p=>[W/2+(p[0]*k+p[2]*s)*R,H/2+p[1]*R,p[2]*k-p[0]*s]);
+x.strokeStyle='#5ccaff';x.lineWidth=.7;
+for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){const A=Q[i],B=Q[j],u=A[0]-B[0],v=A[1]-B[1];if(u*u+v*v<R*R*.22){x.globalAlpha=.06+.3*((A[2]+B[2])/2+1)/2;x.beginPath();x.moveTo(A[0],A[1]);x.lineTo(B[0],B[1]);x.stroke()}}
+x.fillStyle='#d6f6ff';for(const q of Q){x.globalAlpha=.35+.65*(q[2]+1)/2;x.beginPath();x.arc(q[0],q[1],.9+1.7*(q[2]+1)/2,0,6.283);x.fill()}x.globalAlpha=1}
+const fit=()=>{const d=Math.min(devicePixelRatio||1,2);W=c.clientWidth;H=c.clientHeight;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);R=Math.min(W,H)*.34;draw()};
+new ResizeObserver(fit).observe(c);
+new IntersectionObserver(e=>on=e[0].isIntersecting).observe(c);
+if(!rm)requestAnimationFrame(function f(ts){if(on&&ts-l>33){l=ts;t+=.007;draw()}requestAnimationFrame(f)});
+})();
+</script>
+</body>
+</html>
